@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-4</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      width: auto;
+      padding: 10px;
+      gap: 5px;
+      border: 1px solid black;
+    }
+    .box {
+      width: auto;
+      height: 250px;
+      color: white;
+      text-align: center;
+    }
+    .box1 {
+      background-color: red;
+    }
+    .box2 {
+      background-color: green;
+    }
+    .box3 {
+      background-color: blue;
+    }
+    .box4 {
+      background-color: burlywood;
+    }
+    @media (max-width: 600px) {
+      .container {
+        width: 100vw;
+        padding: 5px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box box1">Box1</div>
+      <div class="box box2">Box2</div>
+      <div class="box box3">Box3</div>
+      <div class="box box4">Box4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exxercise-2</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      gap: 5px;
+    }
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        justify-self: center;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <img src="/Img/NewYork.jpg" alt="" height="500px" />
+      <img src="/Img/NewYork.jpg" alt="" height="500px" />
+      <img src="/Img/NewYork.jpg" alt="" height="500px" />
+    </div>
+  </body>
+</html>

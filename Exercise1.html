@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-1 Media Query</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      height: 100px;
+      background-color: rgb(244, 238, 187);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    main p {
+      margin: 10px;
+    }
+    @media (max-width: 600px) {
+      header {
+        background-color: blue;
+        color: whitesmoke;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <h2>Responsive Header</h2>
+    </header>
+    <main>
+      <p>Main Content</p>
+      <p>Footer</p>
+    </main>
+  </body>
+</html>
